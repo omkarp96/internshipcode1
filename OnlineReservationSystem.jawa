@@ -16,7 +16,7 @@ class OnlineReservationSystem {
     static String to;
     static String date;
 
-    // LOGIN MODULE
+
     static boolean login() {
         System.out.print("Enter Username: ");
         String u = sc.next();
@@ -32,7 +32,7 @@ class OnlineReservationSystem {
         }
     }
 
-    // RESERVATION MODULE
+    
     static void reservation() {
         Random rand = new Random();
         pnr = rand.nextInt(999999);
@@ -43,7 +43,7 @@ class OnlineReservationSystem {
         System.out.print("Enter Train Number: ");
         trainNo = sc.next();
 
-        // Auto train name
+        
         if (trainNo.equals("101")) {
             trainName = "Rajdhani Express";
         } else if (trainNo.equals("102")) {
@@ -70,7 +70,7 @@ class OnlineReservationSystem {
         System.out.println("Your PNR Number is: " + pnr);
     }
 
-    // CANCELLATION MODULE
+    
     static void cancellation() {
         System.out.print("Enter PNR Number: ");
         int inputPNR = sc.nextInt();
@@ -95,7 +95,7 @@ class OnlineReservationSystem {
         }
     }
 
-    // MAIN METHOD
+    
     public static void main(String[] args) {
 
         if (!login()) {
